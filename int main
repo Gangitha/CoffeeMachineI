@@ -1,0 +1,12 @@
+int main() {
+    OldCoffeeMachine* oldVendingMachine = new OldCoffeeMachine;
+    CoffeeMachineInterface* newMachine = new CoffeeMachineInterface;
+    CoffeeTouchscreenAdapter* oldMachine = new CoffeeTouchscreenAdapter(oldVendingMachine);
+
+    newMachine->chooseFirstSelection();
+    newMachine->chooseSecondSelection();
+    oldMachine->chooseFirstSelection();
+    oldMachine->chooseSecondSelection();
+
+    return 0;
+}

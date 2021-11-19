@@ -1,0 +1,9 @@
+class CoffeeMachineInterface {
+public:
+    void chooseFirstSelection() {
+        cout << "Coffee flavor 1(new machine)" << "\n";
+    }
+    void chooseSecondSelection() {
+        cout << "Coffee flavor 2(new machine)" << "\n";
+    }
+};

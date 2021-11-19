@@ -1,0 +1,14 @@
+class CoffeeTouchscreenAdapter : public CoffeeMachineInterface {
+private:
+    OldCoffeeMachine* oldVendingMachine;
+public:
+    CoffeeTouchscreenAdapter(OldCoffeeMachine* oldMachine) {
+        oldVendingMachine = oldMachine;
+    }
+    void chooseFirstSelection() {
+        oldVendingMachine->selectA();
+    }
+    void chooseSecondSelection() {
+        oldVendingMachine->selectB();
+    }
+};
